@@ -4,8 +4,8 @@ namespace App\Http;
 
 class Response
 {
-    public array $data = [];
-    public int $code = 200;
+    private array $data = [];
+    private int $code = 200;
 
     public function __construct(array $response)
     {

@@ -11,7 +11,8 @@ class Request
 
     private static function get(array $requestData): array
     {
-
+        $curl = self::make_curl($requestData['uri']);
+        return self::execute($curl);
     }
 
     private static function post(array $requestData): array

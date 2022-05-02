@@ -15,7 +15,9 @@
       "App\\": "app/",
       "App\\Commands\\": "app/commands",
       "App\\Enums\\": "app/enums",
-      "App\\Http\\": "app/http"
+      "App\\Http\\": "app/http",
+      "App\\Routers\\": "app/routers",
+      "App\\Controllers\\": "app/controllers"
     }
   }
 }
