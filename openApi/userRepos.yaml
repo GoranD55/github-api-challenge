@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  title: GitHub Repos
+  description: Specs for REST endpoint providing list of users repositories
+  version: "0.1"
+servers:
+  - url: http://localhost:8080
+paths:
+  /user/repos:
+    get:
+      description: List repositories for a user
+      parameters:
+        - name: username
+          in: query
+          required: false
+          style: form
+          explode: true
+          schema:
+            type: string
+          example: UserName
+      responses:
+        "200":
+          description: Lists public repositories for the specified user
+          content:
+            application/json;charset=utf-8;:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:8080
+    servers:
+      - url: http://localhost:8080
